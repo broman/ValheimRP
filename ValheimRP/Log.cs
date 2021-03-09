@@ -5,7 +5,7 @@ namespace ValheimRP {
     ///     Helper class for properly logging from static contexts.
     /// </summary>
     internal static class Log {
-        internal static ManualLogSource _logSource;
+        private static ManualLogSource _logSource;
 
         internal static void Init(ManualLogSource logSource) {
             _logSource = logSource;

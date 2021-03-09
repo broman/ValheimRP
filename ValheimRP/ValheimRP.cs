@@ -9,7 +9,7 @@ namespace ValheimRP {
         private const string ModName = "ValheimRP";
         private const string ModVer = "0.0.1";
 
-        internal static Harmony HarmonyInstance;
+        private static Harmony _harmonyInstance;
 
         internal static ValheimRP Instance { get; private set; }
 
@@ -18,10 +18,7 @@ namespace ValheimRP {
         /// </summary>
         private void Awake() {
             Instance = this;
-
             Log.Init(Logger);
-            
-            Log.LogInfo("Testing 123!");
             Init();
         }
 
@@ -37,7 +34,7 @@ namespace ValheimRP {
             Disable();
         }
 
-        internal static void Init() {
+        private static void Init() {
             EnableMonoModHooks();
 
             EnableHarmonyPatches();
@@ -61,12 +58,12 @@ namespace ValheimRP {
         }
 
         private static void EnableHarmonyPatches() {
-            HarmonyInstance = new Harmony(ModGuid);
-            HarmonyInstance.PatchAll();
+            _harmonyInstance = new Harmony(ModGuid);
+            _harmonyInstance.PatchAll();
         }
 
         private static void DisableHarmonyPatches() {
-            HarmonyInstance.UnpatchSelf();
+            _harmonyInstance.UnpatchSelf();
         }
 
         private static void OnFejdStartupAwakeMonoModHookShowcase(On.FejdStartup.orig_Awake orig, FejdStartup self) {
