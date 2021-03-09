@@ -20,7 +20,8 @@ namespace ValheimRP {
             Instance = this;
 
             Log.Init(Logger);
-
+            
+            Log.LogInfo("Testing 123!");
             Init();
         }
 
