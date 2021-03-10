@@ -314,5 +314,4 @@
       <HintPath>..\libs\UnityEngine.XRModule.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
 </Project>
