@@ -8,6 +8,8 @@ using System;
 using HarmonyLib;
 using JetBrains.Annotations;
 using UnityEngine;
+using ValheimRP.Util;
+
 // ReSharper disable StringIndexOfIsCultureSpecific.1
 
 namespace ValheimRP {

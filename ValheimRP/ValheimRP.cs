@@ -6,6 +6,7 @@
 
 using BepInEx;
 using HarmonyLib;
+using ValheimRP.Util;
 
 namespace ValheimRP {
     [BepInPlugin(ModGuid, ModName, ModVer)]

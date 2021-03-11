@@ -6,7 +6,7 @@
 
 using BepInEx.Logging;
 
-namespace ValheimRP {
+namespace ValheimRP.Util {
     /// <summary>
     ///  Helper class for properly logging from static contexts.
     /// </summary>
