@@ -1,5 +1,5 @@
 ﻿/*
- * Player.cs
+ * Log.cs
  * Created by Ryan Broman on 2021-03-08
  * ryan@broman.dev
  */
